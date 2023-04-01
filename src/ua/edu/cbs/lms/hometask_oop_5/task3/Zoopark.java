@@ -27,7 +27,9 @@ public class Zoopark {
             animalList.remove(index);
     }
 
-
+    public int size(){
+            return animalList.size();
+    }
     public void showZoopark(){
         int index = 0;
         for (Animal animal:animalList) {
