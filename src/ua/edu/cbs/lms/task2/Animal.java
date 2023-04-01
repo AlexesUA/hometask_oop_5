@@ -50,6 +50,12 @@ public abstract class Animal implements ICharacteristic, IDemeanor{
     @Override
     public String aggression() {
         if(isCarnivores) return "Хижак";
-        else return "Травоядне";
+        else return "Мирне";
+    }
+
+    @Override
+    public String toString() {
+        return String.format("Вік: %1$s; %2$s з %3$s; Покриття шкіри: %4$s; Може: %5$s; Їжа: %6$s;",
+                age, aggression(), limbs, covered, move, food);
     }
 }

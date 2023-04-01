@@ -15,4 +15,8 @@ public class Lion extends Animal{
         return new Lion(age);
     }
 
+    @Override
+    public String toString() {
+        return "Лев; " + super.toString();
+    }
 }
