@@ -19,14 +19,16 @@ public class Zoopark {
     }
 
     public void removeAnimal(Animal animal){
-        int index = animalList.indexOf(animal);
-
         animalList.remove(animal);
     }
 
     public void removeAnimal(int index){
         if(index >= 0 && index<animalList.size())
             animalList.remove(index);
+    }
+
+    public void clear(){
+        animalList.clear();
     }
 
     public int size(){
