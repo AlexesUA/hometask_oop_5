@@ -19,6 +19,8 @@ public class Zoopark {
     }
 
     public void removeAnimal(Animal animal){
+        int index = animalList.indexOf(animal);
+
         animalList.remove(animal);
     }
 

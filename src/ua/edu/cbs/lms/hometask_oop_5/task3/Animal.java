@@ -1,5 +1,7 @@
 package ua.edu.cbs.lms.hometask_oop_5.task3;
 
+import java.util.Objects;
+
 public abstract class Animal implements ICharacteristic, IDemeanor {
 
     protected String name;
@@ -59,5 +61,18 @@ public abstract class Animal implements ICharacteristic, IDemeanor {
     public String toString() {
         return String.format("%1$s; Вік: %2$s; %3$s; Кінцівки: %4$s; Покриття шкіри: %5$s; Може: %6$s; Їжа: %7$s;",
                 name, age, aggression(), limbs, covered, move, food);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Animal animal = (Animal) o;
+        return age == animal.age && isCarnivores == animal.isCarnivores && Objects.equals(name, animal.name) && Objects.equals(covered, animal.covered) && Objects.equals(limbs, animal.limbs) && Objects.equals(food, animal.food) && Objects.equals(move, animal.move);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, age, covered, limbs, food, move, isCarnivores);
     }
 }
