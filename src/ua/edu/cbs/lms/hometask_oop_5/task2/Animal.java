@@ -1,4 +1,4 @@
-package ua.edu.cbs.lms.task2;
+package ua.edu.cbs.lms.hometask_oop_5.task2;
 
 public abstract class Animal implements ICharacteristic, IDemeanor{
 
