@@ -1,9 +1,6 @@
 package ua.edu.cbs.lms.hometask_oop_5.task4;
 
-import java.util.Iterator;
-import java.util.List;
-import java.util.ArrayList;
-import java.util.Random;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -17,10 +14,14 @@ public class Main {
 
         System.out.println(listIntNumbers);
 
-        Iterator<Integer> iteratorIntNumber = listIntNumbers.listIterator();
+        ListIterator<Integer> iteratorIntNumber = listIntNumbers.listIterator();
 
         while (iteratorIntNumber.hasNext()){
-
+            Integer temp = iteratorIntNumber.next();
+            iteratorIntNumber.set(temp + 1);
         }
+
+        System.out.println(listIntNumbers);
+
     }
 }
