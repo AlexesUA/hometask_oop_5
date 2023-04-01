@@ -4,7 +4,8 @@ public class Penguin extends Animal{
 
 
     private Penguin(int age){
-        super("Пінгвін", age, "Хутро", "4 лапи", "М'ясо", "Бігає", true);
+        super("Пінгвін", age, "Хутро", "2 ластоногі лапи та 2 криловидкі лапи",
+                "Риба", "Плаває, Бігає", false);
     }
 
     public static Penguin addPenguin(int age){
