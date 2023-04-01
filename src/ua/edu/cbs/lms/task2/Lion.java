@@ -3,7 +3,7 @@ package ua.edu.cbs.lms.task2;
 public class Lion extends Animal{
 
     private Lion(int age){
-        super(age, "Хутро", "4 лапи", "М'ясо", "Бігає", true);
+        super("Лев", age, "Хутро", "4 лапи", "М'ясо", "Бігає", true);
     }
 
     public static Lion addLion(int age){
@@ -15,8 +15,8 @@ public class Lion extends Animal{
         return new Lion(age);
     }
 
-    @Override
-    public String toString() {
-        return "Лев; " + super.toString();
-    }
+//    @Override
+//    public String toString() {
+//        return super.toString();
+//    }
 }

@@ -1,16 +1,19 @@
 package ua.edu.cbs.lms.task2;
 
-public class Ostrich extends Animal{
-    private Ostrich(int age){
-        super("Страус", age, "Пір'я", "2 лапи та 2 Крила", "Зерно, трава", "Бігає", false);
+public class Penguin extends Animal{
+
+
+    private Penguin(int age){
+        super("Пінгвін", age, "Хутро", "4 лапи", "М'ясо", "Бігає", true);
     }
 
-    public static Ostrich addOstrich(int age){
+    public static Penguin addPenguin(int age){
         if(age<0){
             System.out.println("Вік не може бути менше 0.");
             return null;
         }
-        return new Ostrich(age);
+
+        return new Penguin(age);
     }
 
 //    @Override

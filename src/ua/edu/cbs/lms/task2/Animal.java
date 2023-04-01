@@ -2,6 +2,7 @@ package ua.edu.cbs.lms.task2;
 
 public abstract class Animal implements ICharacteristic, IDemeanor{
 
+    protected String name;
     protected int age;
     protected String covered;
     protected String limbs;
@@ -9,7 +10,8 @@ public abstract class Animal implements ICharacteristic, IDemeanor{
     protected String move;
     protected boolean isCarnivores;
 
-    protected Animal(int age, String covered, String limbs, String food, String move, boolean isCarnivores){
+    protected Animal(String name, int age, String covered, String limbs, String food, String move, boolean isCarnivores){
+        this.name = name;
         this.age = age;
         this.covered = covered;
         this.limbs = limbs;
@@ -55,7 +57,7 @@ public abstract class Animal implements ICharacteristic, IDemeanor{
 
     @Override
     public String toString() {
-        return String.format("Вік: %1$s; %2$s з %3$s; Покриття шкіри: %4$s; Може: %5$s; Їжа: %6$s;",
-                age, aggression(), limbs, covered, move, food);
+        return String.format("%1$s; Вік: %2$s; %3$s з %4$s; Покриття шкіри: %5$s; Може: %6$s; Їжа: %7$s;",
+                name, age, aggression(), limbs, covered, move, food);
     }
 }
