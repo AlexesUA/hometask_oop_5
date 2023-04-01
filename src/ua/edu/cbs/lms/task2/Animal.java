@@ -57,7 +57,7 @@ public abstract class Animal implements ICharacteristic, IDemeanor{
 
     @Override
     public String toString() {
-        return String.format("%1$s; Вік: %2$s; %3$s з %4$s; Покриття шкіри: %5$s; Може: %6$s; Їжа: %7$s;",
+        return String.format("%1$s; Вік: %2$s; %3$s; Кінцівки: %4$s; Покриття шкіри: %5$s; Може: %6$s; Їжа: %7$s;",
                 name, age, aggression(), limbs, covered, move, food);
     }
 }

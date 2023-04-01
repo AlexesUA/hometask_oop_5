@@ -21,7 +21,7 @@ public class Zoopark {
     public void showZoopark(){
         int index = 0;
         for (Animal animal:animalList) {
-            System.out.println((index+1) + animal.toString());
+            System.out.println((index+1) + "; " + animal.toString());
             index++;
         }
     }
