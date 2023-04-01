@@ -1,6 +1,7 @@
 package ua.edu.cbs.lms.hometask_oop_5.task5;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class Friends {
@@ -19,6 +20,10 @@ public class Friends {
         for (String nameFriend : nameFriends){
             System.out.println(nameFriend);
         }
+    }
+
+    public void sort(){
+        Collections.sort(nameFriends);
     }
 
 }
